@@ -1,17 +1,6 @@
 <div align="center">
 
-```
-░█████╗░███╗░░██╗██╗░░░██╗██████╗░░█████╗░░██████╗░
-██╔══██╗████╗░██║██║░░░██║██╔══██╗██╔══██╗██╔════╝░
-███████║██╔██╗██║██║░░░██║██████╔╝███████║██║░░██╗░
-██╔══██║██║╚████║██║░░░██║██╔══██╗██╔══██║██║░░╚██╗
-██║░░██║██║░╚███║╚██████╔╝██║░░██║██║░░██║╚██████╔╝
-╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚═════╝░
-```
-
-# ⚡ Anurag Shroff
-
-### Full-Stack Engineer • AI Builder • Freelance Developer • India
+<img src="assets/banner.svg" alt="Anurag Shroff, Full-Stack Engineer, AI Builder, Freelance Developer, India" width="100%">
 
 > **I build production-ready systems fast. Not prototypes — real products.**
 
@@ -22,7 +11,7 @@
 
 </div>
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## 🧠 Who Am I
 
@@ -33,18 +22,13 @@ I design **systems that scale**, then ship them.
 * 🧩 Focus on **architecture, performance & automation**
 * 💼 Freelance full-stack developer, based in India
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## ✅ Live Projects
 
-* 🍔 **Mitho Map** → food delivery app, full stack on a self-managed VPS (Ubuntu, Nginx, PHP 8.2, MySQL, PM2)
-* 🛍️ **ShoplyCircle** → creator commerce platform (Next.js, Laravel, React dashboards)
-* 🪪 **ID Card Software** → ID card generation system (Laravel, React)
-* 🛒 **shivayarudraksha.com** → e-commerce store + SEO
-* 🛒 **computerworld.com.np** → e-commerce site
-* 📇 **Lead & CRM Management Software** → custom-built for a client
+<img src="assets/live-projects.svg" alt="Live projects: Mitho Map, ShoplyCircle, ID Card Software, shivayarudraksha.com, computerworld.com.np, Lead and CRM Software" width="100%">
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## 🚀 What I'm Building Right Now
 
@@ -56,7 +40,7 @@ I design **systems that scale**, then ship them.
 * 📦 **Centralized Log System** → multi-project monitoring dashboard
 * 🤖 **AI Portfolio Generator** → dev profiling + scoring engine
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## 🧩 Featured Work
 
@@ -74,21 +58,13 @@ I design **systems that scale**, then ship them.
 ### 📊 Log Monitor System
 → Centralized logs from multiple backends
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## ⚙️ Tech Stack
 
-**Frontend:** React • Next.js • TypeScript • Tailwind • React Native
+<img src="assets/stack.svg" alt="Tech stack" width="100%">
 
-**Backend:** Laravel • Node.js • PHP • REST APIs • WebSockets
-
-**Database:** PostgreSQL • MySQL • Supabase • MongoDB
-
-**DevOps:** AWS • DigitalOcean • Cloudflare • Nginx • PM2 • Linux/VPS
-
-**AI:** OpenAI APIs • Prompt Engineering • AI Workflow Design
-
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## 📊 GitHub Analytics
 
@@ -102,7 +78,7 @@ I design **systems that scale**, then ship them.
 
 </div>
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## 🤝 Let's Connect
 
@@ -111,7 +87,7 @@ Building something serious? I'm interested.
 * 💼 Open to **collabs / freelance / product building**
 * 📩 Email, LinkedIn or X
 
----
+<img src="assets/divider.svg" alt="" width="100%">
 
 <div align="center">
 
