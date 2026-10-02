@@ -36,6 +36,10 @@
 
 <img src="assets/divider.svg" alt="" width="100%">
 
+<img src="assets/pixel-game.svg" alt="Pixel art side-scroller game scene — Anurag's character running, collecting coins, with HUD showing LVL 8, HP full, XP bar, and active quest: SHIP DEPLOYIQ" width="100%">
+
+<img src="assets/divider.svg" alt="" width="100%">
+
 ## `⚔️ SKILL TREE`
 
 ```

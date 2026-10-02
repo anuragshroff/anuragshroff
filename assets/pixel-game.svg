@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Pixel art game scene">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14122b"/>
+      <stop offset="100%" stop-color="#231f4a"/>
+    </linearGradient>
+
+    <!-- Scrolling ground tile pattern -->
+    <pattern id="ground-tile" x="0" y="0" width="48" height="24" patternUnits="userSpaceOnUse">
+      <rect width="48" height="24" fill="#2a1f3d"/>
+      <rect x="0" y="0" width="48" height="8" fill="#3d2e5c"/>
+      <rect x="0" y="0" width="1" height="24" fill="#1a1230" opacity="0.5"/>
+      <rect x="24" y="0" width="1" height="24" fill="#1a1230" opacity="0.3"/>
+    </pattern>
+
+    <!-- Clip for scene -->
+    <clipPath id="scene-clip">
+      <rect width="1200" height="280"/>
+    </clipPath>
+
+    <!-- Star twinkle -->
+    <animate id="twinkle-a" attributeName="opacity" values="1;0.2;1" dur="2.3s" repeatCount="indefinite"/>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1200" height="280" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g opacity="0.9">
+    <rect x="42"   y="18" width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.1;1" dur="2.1s" repeatCount="indefinite"/></rect>
+    <rect x="120"  y="8"  width="3" height="3" fill="#ffd23f"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.7s" repeatCount="indefinite"/></rect>
+    <rect x="200"  y="25" width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.2;1" dur="3.1s" repeatCount="indefinite"/></rect>
+    <rect x="320"  y="10" width="3" height="3" fill="#3ddc97"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="450"  y="18" width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.1;1" dur="1.9s" repeatCount="indefinite"/></rect>
+    <rect x="560"  y="6"  width="3" height="3" fill="#ffd23f"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/></rect>
+    <rect x="680"  y="20" width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="780"  y="9"  width="3" height="3" fill="#ff5d8f"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/></rect>
+    <rect x="900"  y="22" width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/></rect>
+    <rect x="1020" y="12" width="3" height="3" fill="#3ddc97"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.3s" repeatCount="indefinite"/></rect>
+    <rect x="1140" y="5"  width="3" height="3" fill="#f2efff"><animate attributeName="opacity" values="1;0.1;1" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="88"   y="40" width="2" height="2" fill="#ffd23f"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></rect>
+    <rect x="260"  y="35" width="2" height="2" fill="#f2efff"><animate attributeName="opacity" values="1;0.2;1" dur="2.0s" repeatCount="indefinite"/></rect>
+    <rect x="400"  y="30" width="2" height="2" fill="#ff5d8f"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.6s" repeatCount="indefinite"/></rect>
+    <rect x="620"  y="38" width="2" height="2" fill="#f2efff"><animate attributeName="opacity" values="1;0.4;1" dur="3.0s" repeatCount="indefinite"/></rect>
+    <rect x="840"  y="32" width="2" height="2" fill="#3ddc97"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/></rect>
+    <rect x="1060" y="28" width="2" height="2" fill="#f2efff"><animate attributeName="opacity" values="1;0.1;1" dur="2.3s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- MOON (pixel) -->
+  <g>
+    <rect x="1100" y="18" width="8" height="8" fill="#f2efff"/>
+    <rect x="1108" y="16" width="8" height="12" fill="#f2efff"/>
+    <rect x="1116" y="18" width="8" height="8" fill="#f2efff"/>
+    <rect x="1108" y="28" width="8" height="4" fill="#f2efff"/>
+    <!-- crater -->
+    <rect x="1112" y="20" width="4" height="4" fill="#c8c4e8" opacity="0.6"/>
+  </g>
+
+  <!-- SCROLLING MOUNTAINS (parallax slow) -->
+  <g clip-path="url(#scene-clip)">
+    <!-- Mountain group 1 -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-600,0" dur="20s" repeatCount="indefinite"/>
+      <!-- Mountain A -->
+      <polygon points="80,160 160,60 240,160"  fill="#1e1a3a"/>
+      <polygon points="100,160 160,80 220,160" fill="#231f4a"/>
+      <!-- Mountain B -->
+      <polygon points="280,160 380,40 480,160" fill="#1e1a3a"/>
+      <polygon points="300,160 380,60 460,160" fill="#231f4a"/>
+      <!-- Mountain C -->
+      <polygon points="520,160 600,90 680,160" fill="#1e1a3a"/>
+      <polygon points="540,160 600,110 660,160" fill="#231f4a"/>
+      <!-- Snow caps -->
+      <polygon points="150,70 160,60 170,70"   fill="#f2efff" opacity="0.7"/>
+      <polygon points="370,50 380,40 390,50"   fill="#f2efff" opacity="0.7"/>
+      <polygon points="590,100 600,90 610,100" fill="#f2efff" opacity="0.7"/>
+    </g>
+    <!-- Mountain group 2 (offset to loop seamlessly) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="600,0" to="0,0" dur="20s" repeatCount="indefinite"/>
+      <polygon points="80,160 160,60 240,160"  fill="#1e1a3a"/>
+      <polygon points="100,160 160,80 220,160" fill="#231f4a"/>
+      <polygon points="280,160 380,40 480,160" fill="#1e1a3a"/>
+      <polygon points="300,160 380,60 460,160" fill="#231f4a"/>
+      <polygon points="520,160 600,90 680,160" fill="#1e1a3a"/>
+      <polygon points="540,160 600,110 660,160" fill="#231f4a"/>
+      <polygon points="150,70 160,60 170,70"   fill="#f2efff" opacity="0.7"/>
+      <polygon points="370,50 380,40 390,50"   fill="#f2efff" opacity="0.7"/>
+      <polygon points="590,100 600,90 610,100" fill="#f2efff" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- GROUND BASE -->
+  <rect x="0" y="210" width="1200" height="70" fill="#2a1f3d"/>
+  <!-- Ground top edge highlight -->
+  <rect x="0" y="210" width="1200" height="8"  fill="#3d2e5c"/>
+  <rect x="0" y="218" width="1200" height="4"  fill="#4a3870"/>
+
+  <!-- SCROLLING GROUND DETAILS -->
+  <g clip-path="url(#scene-clip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-200,0" dur="4s" repeatCount="indefinite"/>
+      <!-- Pixel grass tufts -->
+      <rect x="60"  y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="64"  y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="68"  y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="160" y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="164" y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="360" y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="364" y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="368" y="205" width="4" height="8" fill="#3ddc97"/>
+      <!-- Small rocks -->
+      <rect x="100" y="207" width="8" height="4"  fill="#4a3870"/>
+      <rect x="104" y="204" width="8" height="4"  fill="#3d2e5c"/>
+      <rect x="300" y="207" width="12" height="4" fill="#4a3870"/>
+      <rect x="304" y="204" width="8"  height="4" fill="#3d2e5c"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="200,0" to="0,0" dur="4s" repeatCount="indefinite"/>
+      <rect x="60"  y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="64"  y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="68"  y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="160" y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="164" y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="360" y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="364" y="202" width="4" height="11" fill="#3ddc97"/>
+      <rect x="368" y="205" width="4" height="8" fill="#3ddc97"/>
+      <rect x="100" y="207" width="8"  height="4" fill="#4a3870"/>
+      <rect x="104" y="204" width="8"  height="4" fill="#3d2e5c"/>
+      <rect x="300" y="207" width="12" height="4" fill="#4a3870"/>
+      <rect x="304" y="204" width="8"  height="4" fill="#3d2e5c"/>
+    </g>
+  </g>
+
+  <!-- SCROLLING TREES (mid layer) -->
+  <g clip-path="url(#scene-clip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-480,0" dur="8s" repeatCount="indefinite"/>
+      <!-- Tree 1 -->
+      <rect x="180" y="176" width="8"  height="36" fill="#3d2e5c"/>
+      <rect x="168" y="152" width="32" height="16" fill="#1a472a"/>
+      <rect x="172" y="140" width="24" height="16" fill="#1e5c32"/>
+      <rect x="176" y="128" width="16" height="16" fill="#25753e"/>
+      <!-- Tree 2 -->
+      <rect x="360" y="180" width="8"  height="32" fill="#3d2e5c"/>
+      <rect x="348" y="156" width="32" height="16" fill="#1a472a"/>
+      <rect x="352" y="144" width="24" height="16" fill="#1e5c32"/>
+      <rect x="356" y="132" width="16" height="16" fill="#25753e"/>
+      <!-- Glowing tree (pixel magic) -->
+      <rect x="440" y="174" width="8"  height="38" fill="#3d2e5c"/>
+      <rect x="428" y="150" width="32" height="16" fill="#1a3d4a"/>
+      <rect x="432" y="138" width="24" height="16" fill="#1e4f5c"/>
+      <rect x="436" y="126" width="16" height="16" fill="#256875"/>
+      <rect x="440" y="118" width="8"  height="12" fill="#3ddc97" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="480,0" to="0,0" dur="8s" repeatCount="indefinite"/>
+      <rect x="180" y="176" width="8"  height="36" fill="#3d2e5c"/>
+      <rect x="168" y="152" width="32" height="16" fill="#1a472a"/>
+      <rect x="172" y="140" width="24" height="16" fill="#1e5c32"/>
+      <rect x="176" y="128" width="16" height="16" fill="#25753e"/>
+      <rect x="360" y="180" width="8"  height="32" fill="#3d2e5c"/>
+      <rect x="348" y="156" width="32" height="16" fill="#1a472a"/>
+      <rect x="352" y="144" width="24" height="16" fill="#1e5c32"/>
+      <rect x="356" y="132" width="16" height="16" fill="#25753e"/>
+      <rect x="440" y="174" width="8"  height="38" fill="#3d2e5c"/>
+      <rect x="428" y="150" width="32" height="16" fill="#1a3d4a"/>
+      <rect x="432" y="138" width="24" height="16" fill="#1e4f5c"/>
+      <rect x="436" y="126" width="16" height="16" fill="#256875"/>
+      <rect x="440" y="118" width="8"  height="12" fill="#3ddc97" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- FLOATING COINS (collectibles) -->
+  <g clip-path="url(#scene-clip)">
+    <!-- Coin 1 -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="900,0" to="-50,0" dur="7s" repeatCount="indefinite"/>
+      <rect x="0" y="170" width="8" height="8" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="2" y="168" width="4" height="12" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1" y="167" width="6" height="2" fill="#ffe580"/>
+      <rect x="1" y="177" width="6" height="2" fill="#e6b800"/>
+    </g>
+    <!-- Coin 2 -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="1050,0" to="-50,0" dur="7s" begin="1.5s" repeatCount="indefinite"/>
+      <rect x="0" y="165" width="8" height="8" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="2" y="163" width="4" height="12" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1" y="162" width="6" height="2" fill="#ffe580"/>
+      <rect x="1" y="172" width="6" height="2" fill="#e6b800"/>
+    </g>
+    <!-- Coin 3 -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="1150,0" to="-50,0" dur="7s" begin="3s" repeatCount="indefinite"/>
+      <rect x="0" y="175" width="8" height="8" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="2" y="173" width="4" height="12" fill="#ffd23f">
+        <animate attributeName="opacity" values="1;0.5;1" dur="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1" y="172" width="6" height="2" fill="#ffe580"/>
+      <rect x="1" y="182" width="6" height="2" fill="#e6b800"/>
+    </g>
+  </g>
+
+  <!-- SCROLLING OBSTACLES (pixel crates/blocks) -->
+  <g clip-path="url(#scene-clip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="1200,0" to="-80,0" dur="6s" repeatCount="indefinite"/>
+      <!-- Crate -->
+      <rect x="0"  y="186" width="24" height="24" fill="#3d2e5c" stroke="#ff5d8f" stroke-width="2"/>
+      <rect x="4"  y="190" width="16" height="4"  fill="#ff5d8f" opacity="0.5"/>
+      <rect x="10" y="188" width="4"  height="20" fill="#ff5d8f" opacity="0.5"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="1200,0" to="-80,0" dur="9s" begin="3s" repeatCount="indefinite"/>
+      <!-- Double crate stack -->
+      <rect x="0"  y="186" width="24" height="24" fill="#3d2e5c" stroke="#3ddc97" stroke-width="2"/>
+      <rect x="4"  y="190" width="16" height="4"  fill="#3ddc97" opacity="0.5"/>
+      <rect x="10" y="188" width="4"  height="20" fill="#3ddc97" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- PLAYER CHARACTER (pixel sprite — animated walk cycle) -->
+  <!-- Fixed at x=160, walking in place -->
+  <g transform="translate(160, 154)">
+
+    <!-- Shadow -->
+    <ellipse cx="14" cy="58" rx="10" ry="3" fill="#000000" opacity="0.3"/>
+
+    <!-- === WALK FRAME A (legs apart) === -->
+    <g id="walk-a">
+      <animate attributeName="opacity" values="1;1;0;0;1;1" dur="0.5s" repeatCount="indefinite"/>
+      <!-- Body / torso - pixel shirt (#ff5d8f) -->
+      <rect x="6"  y="16" width="16" height="16" fill="#ff5d8f"/>
+      <!-- Collar highlight -->
+      <rect x="10" y="16" width="8"  height="4"  fill="#ff8ab0"/>
+      <!-- Arms -->
+      <rect x="2"  y="16" width="4"  height="12" fill="#ff5d8f"/>
+      <rect x="22" y="20" width="4"  height="12" fill="#ff5d8f"/>
+      <!-- Hands -->
+      <rect x="2"  y="28" width="4"  height="4"  fill="#f5c8a0"/>
+      <rect x="22" y="32" width="4"  height="4"  fill="#f5c8a0"/>
+      <!-- Legs / pants (#3ddc97) -->
+      <rect x="6"  y="32" width="8"  height="14" fill="#2b9e6f"/>
+      <rect x="14" y="32" width="8"  height="14" fill="#2b9e6f"/>
+      <!-- Shoes -->
+      <rect x="4"  y="44" width="10" height="6"  fill="#231f4a"/>
+      <rect x="14" y="42" width="10" height="6"  fill="#231f4a"/>
+      <!-- Head -->
+      <rect x="6"  y="0"  width="16" height="16" fill="#f5c8a0"/>
+      <!-- Hair -->
+      <rect x="6"  y="0"  width="16" height="4"  fill="#3d2200"/>
+      <rect x="4"  y="2"  width="4"  height="6"  fill="#3d2200"/>
+      <!-- Eyes -->
+      <rect x="8"  y="6"  width="4"  height="4"  fill="#231f4a"/>
+      <rect x="16" y="6"  width="4"  height="4"  fill="#231f4a"/>
+      <!-- Eye shine -->
+      <rect x="9"  y="7"  width="2"  height="2"  fill="#f2efff"/>
+      <rect x="17" y="7"  width="2"  height="2"  fill="#f2efff"/>
+    </g>
+
+    <!-- === WALK FRAME B (legs together) === -->
+    <g id="walk-b">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" dur="0.5s" repeatCount="indefinite"/>
+      <!-- Body / torso -->
+      <rect x="6"  y="16" width="16" height="16" fill="#ff5d8f"/>
+      <rect x="10" y="16" width="8"  height="4"  fill="#ff8ab0"/>
+      <!-- Arms (different position) -->
+      <rect x="2"  y="20" width="4"  height="12" fill="#ff5d8f"/>
+      <rect x="22" y="16" width="4"  height="12" fill="#ff5d8f"/>
+      <!-- Hands -->
+      <rect x="2"  y="32" width="4"  height="4"  fill="#f5c8a0"/>
+      <rect x="22" y="28" width="4"  height="4"  fill="#f5c8a0"/>
+      <!-- Legs together -->
+      <rect x="6"  y="32" width="8"  height="12" fill="#2b9e6f"/>
+      <rect x="14" y="32" width="8"  height="12" fill="#2b9e6f"/>
+      <!-- Shoes -->
+      <rect x="6"  y="42" width="10" height="6"  fill="#231f4a"/>
+      <rect x="14" y="44" width="10" height="6"  fill="#231f4a"/>
+      <!-- Head -->
+      <rect x="6"  y="0"  width="16" height="16" fill="#f5c8a0"/>
+      <rect x="6"  y="0"  width="16" height="4"  fill="#3d2200"/>
+      <rect x="4"  y="2"  width="4"  height="6"  fill="#3d2200"/>
+      <rect x="8"  y="6"  width="4"  height="4"  fill="#231f4a"/>
+      <rect x="16" y="6"  width="4"  height="4"  fill="#231f4a"/>
+      <rect x="9"  y="7"  width="2"  height="2"  fill="#f2efff"/>
+      <rect x="17" y="7"  width="2"  height="2"  fill="#f2efff"/>
+    </g>
+
+    <!-- Laptop / item carried (pixel laptop) -->
+    <g transform="translate(24, 20)">
+      <rect x="0" y="0" width="12" height="8" fill="#3ddc97" rx="0"/>
+      <rect x="1" y="1" width="10" height="6" fill="#14122b"/>
+      <!-- Screen glow -->
+      <rect x="2" y="2" width="6"  height="2" fill="#3ddc97" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="0" y="8" width="12" height="2" fill="#2b9e6f"/>
+    </g>
+  </g>
+
+  <!-- HUD: Score / Status bar at top -->
+  <rect x="0" y="0" width="1200" height="50" fill="#14122b" opacity="0.85"/>
+  <rect x="0" y="48" width="1200" height="2"  fill="#ff5d8f"/>
+
+  <!-- HUD content -->
+  <!-- Score -->
+  <text x="20" y="32" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="bold" fill="#ffd23f">SCORE</text>
+  <text x="80" y="32" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="bold" fill="#f2efff">005420</text>
+
+  <!-- Level -->
+  <text x="200" y="32" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="bold" fill="#ffd23f">LVL</text>
+  <text x="234" y="32" font-family="'Courier New',Courier,monospace" font-size="16" font-weight="bold" fill="#3ddc97">08</text>
+
+  <!-- HP Bar -->
+  <text x="300" y="32" font-family="'Courier New',Courier,monospace" font-size="14" font-weight="bold" fill="#ff5d8f">HP</text>
+  <rect x="330" y="18" width="120" height="14" fill="#1a1230" rx="2"/>
+  <rect x="330" y="18" width="120" height="14" fill="none" stroke="#ff5d8f" stroke-width="1" rx="2"/>
+  <rect x="332" y="20" width="116" height="10" fill="#ff5d8f" rx="1"/>
+
+  <!-- XP Bar -->
+  <text x="470" y="32" font-family="'Courier New',Courier,monospace" font-size="14" font-weight="bold" fill="#3ddc97">XP</text>
+  <rect x="498" y="18" width="120" height="14" fill="#1a1230" rx="2"/>
+  <rect x="498" y="18" width="120" height="14" fill="none" stroke="#3ddc97" stroke-width="1" rx="2"/>
+  <rect x="500" y="20" width="92"  height="10" fill="#3ddc97" rx="1">
+    <!-- XP bar fill animation -->
+    <animate attributeName="width" values="92;116;92" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Coins collected -->
+  <rect x="650" y="18" width="10" height="10" fill="#ffd23f"/>
+  <rect x="652" y="16" width="6"  height="14" fill="#ffd23f"/>
+  <rect x="651" y="15" width="8"  height="2"  fill="#ffe580"/>
+  <rect x="651" y="27" width="8"  height="2"  fill="#e6b800"/>
+  <text x="666" y="31" font-family="'Courier New',Courier,monospace" font-size="14" font-weight="bold" fill="#ffd23f">x 42</text>
+
+  <!-- Status -->
+  <text x="740" y="32" font-family="'Courier New',Courier,monospace" font-size="14" font-weight="bold" fill="#f2efff">STATUS:</text>
+  <text x="820" y="32" font-family="'Courier New',Courier,monospace" font-size="14" font-weight="bold" fill="#3ddc97">GRINDING...</text>
+
+  <!-- Lives -->
+  <text x="1000" y="32" font-family="'Courier New',Courier,monospace" font-size="16" fill="#ff5d8f">♥ ♥ ♥</text>
+
+  <!-- HUD right: current quest -->
+  <text x="1060" y="20" font-family="'Courier New',Courier,monospace" font-size="10" fill="#ffd23f" opacity="0.8">QUEST:</text>
+  <text x="1060" y="34" font-family="'Courier New',Courier,monospace" font-size="11" fill="#f2efff">SHIP DEPLOYIQ</text>
+
+  <!-- Outer border (pixel frame) -->
+  <rect x="0" y="0" width="1200" height="280" fill="none" stroke="#ff5d8f" stroke-width="4"/>
+  <rect x="4" y="4" width="1192" height="272" fill="none" stroke="#231f4a" stroke-width="2"/>
+
+</svg>
